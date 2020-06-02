@@ -1,0 +1,2168 @@
+@font-face {
+    src: url(fonts/Wremena-Light.otf);
+    font-family: W;
+}
+
+
+body {
+    background-color: #010101;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+    height: 13995px;
+    position: relative;
+    cursor: none;
+    overflow-x: hidden;
+   
+
+}
+
+
+
+.cursor {
+    background-image: url(img/cursor.svg);
+    background-size: cover;
+    position: fixed;
+    width: 179px;
+    height: 253px;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 999;
+    transition: transform 0.2s;
+}
+
+
+.menu {
+    position: absolute;
+    width: 288px;
+    height: 316px;
+    left: 0.5%;
+    top: 0.10%;
+    /* background-color: aqua;*/
+    display: block;
+    font-size: 16px;
+    z-index: 1001;
+}
+
+
+.dropdown-button {
+    /*  background-color: pink;*/
+    width: 260px;
+    height: 47px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    text-align: left;
+}
+
+
+.dropdown-menu {
+
+    position: relative;
+    z-index: 1;
+    display: none;
+    width: 260px;
+    height: 236px;
+    font-family: W;
+    font-size: 20px;
+}
+
+.subtitle {
+    width: 260px;
+    height: 56px;
+    display: block;
+    /* background-color: blue;*/
+}
+
+
+.nav {
+    width: 260px;
+    height: 128px;
+    color: white;
+    /*  background-color: bisque;*/
+    display: block;
+    padding-top: 20px;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.menu:hover .dropdown-menu {
+    display: block;
+
+}
+
+/*
+.background {
+    position: absolute;
+width: 1440px;
+height: 2866px;
+    top: 12%;
+    
+}*/
+
+
+.background-azul {
+    position: absolute;
+    width: 1440px;
+    height: 1050px;
+    top: 0%;
+
+}
+
+.BKG {
+    position: absolute;
+    width: 1617px;
+    height: 11514px;
+    left: 0px;
+    top: 1072px;
+    background-size: cover;
+}
+
+
+
+
+#enter {
+    position: absolute;
+    width: 409px;
+    height: 69px;
+    left: calc(50% - 409px/2 - 0.5px);
+    top: 4%;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+}
+
+.line {
+    position: absolute;
+    width: 383px;
+    height: 1843px;
+    top: 1837px;
+    left: 6%;
+}
+
+.insta {
+    background-image: url(img/insta-branco.svg);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: calc(50% - 25px/2 - 0.5px);
+    position: absolute;
+    top: 13868px;
+}
+
+.insta:hover {
+    background-image: url(img/insta-azul.svg);
+}
+
+#top {
+    background-image: url(img/journey/top.svg);
+    position: fixed;
+    width: 24px;
+    height: 40px;
+    top: 90%;
+    left: 2%;
+    display: none;
+    z-index: 99;
+    cursor: pointer;
+}
+
+#top:hover {
+    background-image: url(img/journey/top2.svg);
+}
+
+
+/*.scale {
+    width: 1199px;
+height: 12199px;
+    transform: scale(0.8);
+}*/
+
+
+
+
+
+
+/*SHOOTING*/
+
+
+.shooting-title {
+    position: absolute;
+    width: 175px;
+    height: 33px;
+    top: 988px;
+    left: 8%;
+}
+
+#1vid {
+    position: absolute;
+    width: 588.82px;
+    height: 373px;
+    left: calc(50% - 588.82px/2);
+    top: 1114px;
+    box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69);
+    outline: none;
+}
+
+#coluna-shooting {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    left: 8%;
+    top: 1134px;
+    cursor: pointer;
+}
+
+#coluna-shooting:hover {
+    background-image: url(img/journey/volume-off.svg);
+}
+
+#coluna-off {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    left: 8%;
+    top: 1064px;
+    display: none;
+    z-index: 999;
+}
+
+
+
+
+
+
+/*1-WAR*/
+
+
+#war-voice {
+    position: absolute;
+    width: 588.82px;
+    height: 373px;
+    left: calc(50% - 588.82px/2);
+    top: 2024px;
+    z-index: 1000;
+    box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69);
+    outline: none;
+}
+
+#close {
+    position: absolute;
+    width: 53px;
+    height: 20px;
+    left: 8%;
+    top: 2002px;
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: W;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+
+}
+
+#close:hover {
+    color: #0025DC;
+}
+
+
+.vietnam {
+    background-image: url(img/journey/1-war/war-vietnam.jpg);
+    position: absolute;
+    width: 221px;
+    height: 154px;
+    top: 2160px;
+    left: 9%;
+    background-size: cover;
+    z-index: 1;
+}
+
+.vietnam-text {
+    background-image: url(img/journey/1-war/vietnam-photo-text.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 335px;
+    height: 28px;
+    left: 8.5%;
+    top: 2326px;
+    z-index: 2;
+    background-size: cover;
+}
+
+.vietnam:hover {
+    position: absolute;
+    width: 659px;
+    height: 459px;
+    background-size: cover;
+    z-index: 3;
+
+}
+
+.uncle-sam {
+    position: absolute;
+    width: 141px;
+    height: 189px;
+    left: 67%;
+    top: 2405px;
+    background-size: cover;
+    background-image: url(img/journey/1-war/uncle-sam.svg);
+}
+
+.uncle-sam-text {
+    position: absolute;
+    width: 329px;
+    height: 18px;
+    left: 66.5%;
+    top: 2602px;
+    z-index: 2;
+}
+
+
+.uncle-sam:hover {
+
+    width: 407px;
+    height: 547px;
+    z-index: 3;
+}
+
+.soldiers-video {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    left: 40%;
+    top: 1972px;
+    outline: none;
+}
+
+.soldiers-text {
+
+    position: absolute;
+    width: 417px;
+    height: 36px;
+    left: 58%;
+    top: 2190px;
+    z-index: 2;
+}
+
+
+.soldiers-video:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+
+}
+
+.vietnam-video {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    left: 36%;
+    top: 2130px;
+    outline: none;
+}
+
+.vietnam-vid-text {
+    position: absolute;
+    width: 417px;
+    height: 41px;
+    left: 36%;
+    top: 2340px;
+}
+
+.vietnam-video:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+#recordings {
+    position: absolute;
+    width: 204.5px;
+    height: 0px;
+    left: 28%;
+    top: 2491px;
+}
+
+
+.vietnam-recordings-text {
+    position: absolute;
+    width: 417px;
+    height: 89px;
+    left: 27.5%;
+    top: 2530px;
+}
+
+
+
+
+
+/*2-ALEX-BIRTH*/
+
+
+.birth-title {
+    position: absolute;
+    width: 417px;
+    height: 61px;
+    top: 22.25%;
+    left: 8%;
+
+}
+
+.birth-date {
+    position: absolute;
+    width: 251px;
+    height: 75px;
+    top: 22.5%;
+    left: 8%;
+
+}
+
+#birth-voice {
+    position: absolute;
+    width: 588.82px;
+    height: 373px;
+    box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69);
+    left: calc(50% - 588.82px/2);
+    ;
+    top: 2968px;
+    z-index: 1000;
+    outline: none;
+
+}
+
+#birth-button {
+    background-image: url(img/journey/volume.svg);
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    cursor: pointer;
+    top: 2968px;
+    left: 8%;
+    margin: 0;
+    padding: 0;
+}
+
+#birth-button:hover {
+    background-image: url(img/journey/volume-off.svg);
+}
+
+
+.colorado-nyt {
+    position: absolute;
+    width: 178px;
+    height: 189px;
+    left: 30%;
+    top: 2937px;
+    background-image: url(img/journey/2-alex-birth/colorado-nyt.svg);
+    background-size: cover;
+}
+
+.colorado-text {
+    position: absolute;
+    width: 263px;
+    height: 105px;
+    left: 29%;
+    top: 3140px;
+    z-index: 1;
+}
+
+
+.colorado-nyt:hover {
+    width: 530px;
+    height: 562px;
+    z-index: 3;
+    background-repeat: no-repeat;
+}
+
+.promo-vid {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    left: 50%;
+    top: 3066px;
+    outline: none;
+}
+
+.promo-vid-text {
+    position: absolute;
+    width: 417px;
+    height: 21px;
+    left: 50%;
+    top: 3280px;
+    z-index: 2;
+}
+
+.promo-vid:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+.armed-man-vid {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    left: 20%;
+    top: 3228px;
+    outline: none;
+}
+
+.armed-man-text {
+    position: absolute;
+    width: 417px;
+    height: 49px;
+    left: 19%;
+    top: 3445px;
+}
+
+.armed-man-vid:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+.rocky-mountain {
+    position: absolute;
+    width: 232px;
+    height: 155px;
+    left: 65%;
+    top: 3228px;
+    background-image: url(img/journey/2-alex-birth/rocky-mountain.jpg);
+    background-size: cover;
+}
+
+.rocky-mountains-text {
+    position: absolute;
+    width: 417px;
+    height: 19px;
+    left: 64.5%;
+    top: 3390px;
+
+}
+
+.rocky-mountain:hover {
+    width: 559px;
+    height: 374px;
+    z-index: 2;
+
+}
+
+
+
+
+
+
+/*3-FIRST-PIANO-LESSON*/
+
+
+#piano-voz-off {
+    position: absolute;
+    width: 588.82px;
+    height: 373px;
+    left: calc(50% - 588.82px/2);
+    top: 3915px;
+    z-index: 1001;
+    box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69);
+    outline: none;
+}
+
+
+
+#piano-button {
+position: absolute;
+width: 59.2px;
+height: 37px;
+top: 3915px;
+    left: 8%;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+
+/*#piano-button:hover {
+    background-image: url(img/journey/volume-off.svg);
+    z-index: 1;
+    border: 0;
+}*/
+
+
+
+.fur-elise {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    top: 4011px;
+    left: 20%;
+    outline: none;
+}
+
+
+
+.fur-elise:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+.fur-elise-texto {
+    position: absolute;
+    width: 417px;
+    height: 26px;
+    top: 4230px;
+    left: 20%;
+}
+
+
+#ted {
+    position: absolute;
+    width: 204.5px;
+    height: 0px;
+    top: 4209px;
+    left: 60%;
+}
+
+
+#play {
+
+    left: 0%;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    margin-left: 0%;
+    transform: translate(-50%, -50%);
+
+}
+
+#seek-bar {
+    width: 250px;
+    height: 5px;
+    border: 1px solid #0025DC;
+    display: flex;
+    border-radius: 50px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+#fill {
+    height: 5px;
+    background-color: #0025DC;
+    border-radius: 20px;
+}
+
+#handle {
+    width: 8px;
+    height: 8px;
+    background-color: #0025DC;
+    border-radius: 50%;
+    margin-left: -5px;
+    transform: scale(2);
+}
+
+.ted-texto {
+    position: absolute;
+    width: 425px;
+    height: 74px;
+    top: 4249px;
+    left: 59%;
+}
+
+
+.elephant-poem1 {
+    position: absolute;
+    width: 429px;
+    height: 248px;
+    left: 774px;
+    top: 3869px;
+    z-index: 1001;
+
+}
+
+.piano-lesson-spot {
+    position: absolute;
+    width: 194px;
+    height: 274px;
+    left: calc(50% - 194px/2 + 305px);
+    top: 3890px;
+    z-index: 1000;
+}
+
+
+
+
+
+/*4-MEDIA*/
+
+#media-voice {
+    position: absolute;
+    width: 588.82px;
+    height: 373px;
+    left: calc(50% - 588.82px/2);
+    top: 4744px;
+    z-index: 1000;
+    box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69);
+    outline: none;
+}
+
+
+#media-button {
+position: absolute;
+width: 59.2px;
+height: 37px;
+top: 4735px;
+    left: 8%;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    z-index: 2;
+}
+
+/*#media-button:hover {
+    background-image: url(img/journey/volume-off.svg);
+}*/
+
+
+#propaganda {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    left: 25%;
+    top: 4778px;
+    outline: none;
+}
+
+#propaganda:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+.propa-text {
+    position: absolute;
+    width: 364px;
+    height: 39px;
+    left: 25%;
+    top: 4990px;
+    z-index: 1;
+}
+
+#propaganda2 {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    top: 4718px;
+    left: 40%;
+    outline: none;
+}
+
+#propaganda2:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+
+.propa-text2 {
+    position: absolute;
+    width: 368px;
+    height: 39px;
+    left: 40%;
+    top: 4930px;
+    z-index: 1;
+}
+
+
+#rambo {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    top: 5017px;
+    left: 15%;
+    outline: none;
+}
+
+#rambo:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+.rambo-text {
+    position: absolute;
+    width: 377px;
+    height: 40px;
+    left: 15%;
+    top: 5230px;
+}
+
+#manson {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    top: 5070px;
+    left: 55%;
+    outline: none;
+}
+
+#manson:hover {
+    width: 663.01px;
+    height: 420px;
+    left: 30%;
+    z-index: 3;
+}
+
+.manson-text {
+    position: absolute;
+    width: 447px;
+    height: 55px;
+    left: 55%;
+    top: 5300px;
+}
+
+#western {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    top: 4854px;
+    left: 65%;
+    outline: none;
+}
+
+#western:hover {
+    width: 663.01px;
+    height: 420px;
+    left: 40%;
+    z-index: 3;
+}
+
+.western-text {
+    position: absolute;
+    width: 340px;
+    height: 39px;
+    left: 65%;
+    top: 5070px;
+}
+
+
+
+
+
+/*CONTACT GUNS*/
+
+
+#guns-voz {
+    position: absolute;
+    width: 588.82px;
+    height: 373px;
+    left: calc(50% - 588.82px/2);
+    top: 5650px;
+    box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69);
+    z-index: 1000;
+    outline: none;
+}
+
+#guns-button {
+position: absolute;
+width: 59.2px;
+height: 37px;
+    left: 8%;
+    cursor: pointer;
+    z-index: 2;
+    top: 5640px;
+}
+
+/*#guns-button:hover {
+    background-image: url(img/journey/volume-off.svg);
+    z-index: 3;
+}*/
+
+#add {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    top: 5613px;
+    left: 45%;
+    outline: none;
+}
+
+#add:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+.add-text {
+    position: absolute;
+    width: 370px;
+    height: 30px;
+    left: 45%;
+    top: 5840px;
+    z-index: 2;
+
+}
+
+.kid1 {
+    background-image: url(img/journey/5-first-contact-guns/kid1.svg);
+    position: absolute;
+    background-size: cover;
+    left: 20%;
+    position: absolute;
+    width: 188px;
+    height: 189px;
+    top: 5695px;
+
+}
+
+.kid1:hover {
+    width: 352px;
+    height: 354px;
+    z-index: 3;
+}
+
+.kid2 {
+    position: absolute;
+    width: 189px;
+    height: 189px;
+    top: 5869px;
+    left: 15%;
+    background-image: url(img/journey/5-first-contact-guns/kid2.svg);
+    background-size: cover;
+}
+
+.kid2:hover {
+    width: 249px;
+    height: 333px;
+    z-index: 3;
+}
+
+.kid3 {
+    position: absolute;
+    width: 141px;
+    height: 189px;
+    top: 6008px;
+    left: 20%;
+    background-image: url(img/journey/5-first-contact-guns/kid3.svg);
+    background-size: cover;
+}
+
+.kid3:hover {
+    width: 357px;
+    height: 357px;
+    z-index: 3;
+}
+
+.kid-text {
+    position: absolute;
+    width: 395px;
+    height: 49.91px;
+    left: 20%;
+    top: 6215px;
+}
+
+.gun-nation {
+    position: absolute;
+    width: 159px;
+    height: 202px;
+    top: 5983px;
+    left: 60%;
+    background-image: url(img/journey/5-first-contact-guns/gun-nation.svg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.gun-nation:hover {
+    width: 359px;
+    height: 456px;
+    z-index: 3;
+}
+
+.gun-nation2 {
+    position: absolute;
+    width: 231px;
+    height: 154px;
+    top: 5906px;
+    left: 65%;
+    background-image: url(img/journey/5-first-contact-guns/gun-nation2.svg);
+    background-size: cover;
+}
+
+.gun-nation2:hover {
+    width: 583px;
+    height: 388px;
+    z-index: 3;
+    left: 50%;
+}
+
+.gun-nation-text {
+    position: absolute;
+    width: 360px;
+    height: 50px;
+    left: 60%;
+    top: 6200px;
+}
+
+.quote-guns {
+    background-image: url(img/journey/5-first-contact-guns/quote.svg);
+    position: absolute;
+    width: 422px;
+    height: 139px;
+    left: 35%;
+    top: 5914px;
+    z-index: 2;
+}
+
+
+
+
+
+/*FIRST DAY SCHOOL*/
+
+#school-voz {
+    position: absolute;
+    width: 588.82px;
+    height: 373px;
+    left: calc(50% - 588.82px/2);
+    top: 6600px;
+    box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69);
+    z-index: 1000;
+    outline: none;
+}
+
+#school-button {
+    background-image: url(img/journey/volume2.svg);
+position: absolute;
+width: 46.4px;
+height: 29px;
+left: 8.5%;
+ top: 6600px;
+cursor: pointer;
+}
+
+
+#school-button:hover {
+    background-image: url(img/journey/volume-off2.svg);
+    z-index: 3;
+}
+
+
+.frame1 {
+    background-image: url(img/journey/6-first-day-school/frame1.svg);
+    left: 18%;
+    position: absolute;
+    width: 153px;
+    height: 115px;
+    top: 6583px;
+}
+
+.frame2 {
+    background-image: url(img/journey/6-first-day-school/frame2.svg);
+    left: 20%;
+    position: absolute;
+    width: 153px;
+    height: 115px;
+    top: 6620px;
+
+}
+
+.frame3 {
+    background-image: url(img/journey/6-first-day-school/frame3.svg);
+    position: absolute;
+    width: 153px;
+    height: 115px;
+    top: 6583px;
+    left: 25%;
+
+}
+
+.frame4 {
+    background-image: url(img/journey/6-first-day-school/frame4.svg);
+    position: absolute;
+    width: 153px;
+    height: 115px;
+    top: 6583px;
+    left: 35%;
+
+}
+
+.frame5 {
+    background-image: url(img/journey/6-first-day-school/frame5.svg);
+    position: absolute;
+    width: 153px;
+    height: 115px;
+    top: 6583px;
+    left: 40%;
+
+}
+
+.frame5:hover {
+    width: 380px;
+    height: 287px;
+    z-index: 2;
+    background-size: cover;
+}
+
+.frame1:hover {
+    width: 380px;
+    height: 287px;
+    z-index: 2;
+    background-size: cover;
+}
+
+.frame2:hover {
+    width: 380px;
+    height: 287px;
+    z-index: 2;
+    background-size: cover;
+}
+
+.frame3:hover {
+    width: 380px;
+    height: 287px;
+    z-index: 2;
+    background-size: cover;
+}
+
+.frame4:hover {
+    width: 380px;
+    height: 287px;
+    z-index: 2;
+    background-size: cover;
+}
+
+.frames-text {
+    position: absolute;
+    width: 400px;
+    height: 30px;
+    left: 19.5%;
+    top: 6750px;
+}
+
+.quote {
+    position: absolute;
+    width: 387px;
+    height: 220px;
+    left: 19%;
+    top: 6857px;
+    z-index: 2;
+}
+
+.cartoon {
+    position: absolute;
+    width: 192px;
+    height: 142px;
+    top: 7077px;
+    left: 43%;
+    z-index: 1;
+    background-image: url(img/journey/6-first-day-school/cartoon.svg);
+}
+
+.cartoon:hover {
+    width: 406px;
+    height: 300px;
+    background-size: cover;
+    z-index: 3;
+
+}
+
+.cartoon-text {
+    position: absolute;
+    width: 229px;
+    height: 31px;
+    left: 42.5%;
+    top: 7225px;
+    background-image: url(img/journey/6-first-day-school/cartoon-text.svg);
+    z-index: 1;
+}
+
+#trailer {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    left: 60%;
+    top: 6583px;
+    outline: none;
+}
+
+.trailer-text {
+    position: absolute;
+    width: 322px;
+    height: 53px;
+    left: 60.5%;
+    top: 6810px;
+    background-image: url(img/journey/6-first-day-school/trailer-text.svg);
+}
+
+#trailer:hover {
+    left: 45%;
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+#american-high {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    left: 70%;
+    top: 6895px;
+    outline: none;
+}
+
+.american-high-text {
+    position: absolute;
+    width: 474px;
+    height: 48px;
+    left: 70%;
+    top: 7115px;
+    background-image: url(img/journey/6-first-day-school/american-high-text.svg);
+}
+
+#american-high:hover {
+    width: 663.01px;
+    height: 420px;
+    left: 55%;
+    z-index: 3;
+}
+
+
+
+
+
+
+/*4 JULHO*/
+
+
+#four-julho-voz {
+    position: absolute;
+    width: 588.82px;
+    height: 373px;
+    left: calc(50% - 588.82px/2);
+    top: 7470px;
+    box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69);
+    outline: none;
+    z-index: 1002;
+}
+
+#four-july-button {
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    left: 8%;
+    top: 7470px;
+    cursor: pointer;
+    left: 8%;
+    z-index: 2;
+}
+
+
+
+.four-july-poem {
+    background-image: url(img/journey/7-4-julho/poem-4-july.svg);
+ position: absolute;
+width: 154px;
+height: 189px;
+left: 20%;
+top: 7808px;
+}
+
+
+.four-july-poem:hover {
+ width: 484px;
+height: 592px;
+    z-index: 1;
+    background-size: cover;
+}
+
+.poem-text {
+    position: absolute;
+    width: 449px;
+    height: 50px;
+    left: 20%;
+    top: 8015px;
+}
+
+#fur-elise-four-julho {
+    position: absolute;
+    width: 319.75px;
+    height: 215px;
+    left: 20%;
+    top: 7505px;
+    outline: none;
+}
+
+#fur-elise-four-julho:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 2;
+}
+
+.fur-elise-four-julho-text {
+    position: absolute;
+    width: 140px;
+    height: 28px;
+    left: 20%;
+    top: 7725px;
+    background-image: url(img/journey/7-4-julho/fur-elise-text.svg);
+}
+
+.elephant-poem2 {
+    position: absolute;
+    width: 366px;
+    height: 248px;
+    left: 50%;
+    top: 7568px;
+    z-index: 1001;
+
+}
+
+.spot-four-july {
+    position: absolute;
+    width: 179px;
+    height: 253px;
+    left: 58%;
+    top: 7575px;
+    z-index: 1000;
+}
+
+#american-dream {
+    position: absolute;
+   width: 240.5px;
+height: 23.5px;
+    left: 55%;
+    top: 7856px;
+}
+
+#play {
+
+    left: 0%;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    margin-left: 0%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+
+}
+
+#seek-bar {
+    width: 250px;
+    height: 5px;
+    border: 1px solid #0025DC;
+    display: flex;
+    border-radius: 50px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+#fill {
+    height: 5px;
+    background-color: #0025DC;
+    border-radius: 20px;
+}
+
+#handle {
+    width: 8px;
+    height: 8px;
+    background-color: #0025DC;
+    border-radius: 50%;
+    margin-left: -5px;
+    transform: scale(2);
+}
+
+.american-dream-text {
+    position: absolute;
+    width: 449px;
+    height: 44px;
+    left: 53.5%;
+    top: 7900px;
+}
+
+
+
+
+
+
+
+
+
+/*FRIENDSHIP*/
+
+#friendship-voz {
+    position: absolute;
+width: 588.82px;
+height: 373px;
+ left: calc(50% - 588.82px/2);
+top: 8437px;
+    box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69);
+    z-index: 4;
+    outline: none;
+}
+
+#friendship-button {
+       position: absolute;
+    width: 36px;
+    height: 33px;
+    left: 8%;
+    top: 8437px;
+    cursor: pointer;
+    left: 8%;
+    z-index: 2;
+}
+
+
+#doom {
+ 
+position: absolute;
+width: 319.75px;
+height: 215px;
+left: 237px;
+top: 8425px;
+    outline: none;
+}
+
+#doom:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+.doom-text {
+    position: absolute;
+    width: 472px;
+    height: 51px;
+    left: 229px;
+    top: 8652px;
+    z-index: 1;
+}
+
+#columbine-tapes {
+position: absolute;
+width: 319.75px;
+height: 215px;
+left: 918px;
+top: 8640px;
+    outline: none;
+}
+
+#columbine-tapes:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+#columbine-tapes2 {
+position: absolute;
+width: 319.75px;
+height: 215px;
+left: 752px;
+top: 8750px;
+    outline: none;
+}
+
+#columbine-tapes2:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+
+.columbine-tapes-text {
+    position: absolute;
+    width: 436px;
+    height: 71px;
+    left: 752px;
+    top: 8970px;
+}
+
+
+#doom-levels {
+position: absolute;
+width: 319.75px;
+height: 215px;
+left: 623px;
+top: 8315px;
+outline: none;
+}
+
+#doom-levels:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+.doom-levels-text {
+    position: absolute;
+    width: 436px;
+    height: 47px;
+    left: 623px;
+    top: 8530px;
+}
+
+.gun-kid1 {
+  position: absolute;
+width: 150px;
+height: 186px;
+left: 469px;
+top: 8688px;
+    background-size: cover;
+    background-image: url(img/journey/8-friendship/gun-kid1.svg);
+}
+
+.gun-kid2 {
+   position: absolute;
+width: 177px;
+height: 142px;
+left: 357px;
+top: 8781px;
+    background-size: cover;
+    background-image: url(img/journey/8-friendship/gun-kid2.svg);
+}
+
+.gun-kid3 {
+position: absolute;
+width: 150px;
+height: 187px;
+left: 265px;
+top: 8824px;
+    background-size: cover;
+    background-image: url(img/journey/8-friendship/gun-kid3.svg);
+}
+
+.gun-kid1:hover {
+    width: 286px;
+    height: 355px;
+    z-index: 3;
+}
+
+.gun-kid2:hover {
+    width: 367px;
+    height: 295px;
+    z-index: 3;
+}
+
+.gun-kid3:hover {
+    width: 286px;
+    height: 355px;
+    z-index: 3;
+}
+
+.gun-kid-text {
+    position: absolute;
+    width: 380px;
+    height: 43px;
+    left: 340px;
+    top: 8957px;
+}
+
+
+
+
+
+
+
+
+/*BULLYING*/
+
+
+#bullying-voz {
+position: absolute;
+width: 588.82px;
+height: 373px;
+ left: calc(50% - 588.82px/2);
+top: 9321px;
+    box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69);
+    z-index: 4;
+    outline: none;
+}
+
+#bullying-button {
+          position: absolute;
+    width: 36px;
+    height: 33px;
+    left: 8%;
+    top: 9321px;
+    cursor: pointer;
+    left: 8%;
+    z-index: 2; 
+}
+
+#columbine {
+ position: absolute;
+width: 319.75px;
+height: 215px;
+left: 20%;
+top: 9278px;
+    outline: none;
+
+}
+
+#columbine:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 2;
+}
+
+.columbine-text {
+    position: absolute;
+    width: 347px;
+    height: 47px;
+    left: 20%;
+    top: 9500px;
+}
+
+.eric-profile {
+    background-image: url(img/journey/9-bullying/eric-profile.svg);
+ position: absolute;
+width: 187px;
+height: 142px;
+left: 70%;
+    top: 9278px;
+    background-size: cover;
+}
+
+.eric-profile:hover {
+    background-image: url(img/journey/9-bullying/eric-profile-hover.svg);
+    width: 365px;
+height: 277px;
+    z-index: 3;
+}
+
+.eric-profile-text {
+    position: absolute;
+    width: 172px;
+    height: 21px;
+    left: 69.5%;
+    top: 9430px;
+}
+
+#clueless {
+  position: absolute;
+width: 319.75px;
+height: 215px;
+left: 28%;
+top: 9599px;
+    outline: none;
+    z-index: 1;
+}
+
+#clueless:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 2;
+}
+
+.clueless-text {
+    position: absolute;
+    width: 369px;
+    height: 32px;
+    left: 28%;
+    top: 9800px;
+    z-index: 1;
+}
+
+#bullying {
+  position: absolute;
+width: 319.75px;
+height: 215px;
+left: 20%;
+top: 9702px;
+    outline: none;
+}
+
+#bullying:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 2;
+}
+
+.bullying-text {
+    position: absolute;
+    width: 249px;
+    height: 22px;
+    left: 20%;
+    top: 9920px;
+}
+
+.internet {
+    background-image: url(img/journey/9-bullying/internet.svg);
+  position: absolute;
+width: 169px;
+height: 141px;
+left: 55%;
+top: 9397px;
+       background-size: cover;
+}
+
+.internet:hover {
+    background-image: url(img/journey/9-bullying/internet-hover.svg);
+    width: 350px;
+height: 292px;
+    z-index: 3;
+}
+
+.internet-text {
+    position: absolute;
+    width: 410px;
+    height: 49px;
+    left: 54.5%;
+    top: 9545px;
+}
+
+.quote-bully2 {
+   position: absolute;
+width: 397px;
+height: 221px;
+left: 60%;
+top: 9654px;
+}
+
+
+
+
+
+
+
+/*PROM*/
+
+#prom-voz {
+position: absolute;
+width: 588.82px;
+height: 373px;
+ left: calc(50% - 588.82px/2);
+top: 10256px;
+    box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69);
+    z-index: 1002;
+    outline: none;
+    
+}
+
+#prom-button {
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    left: 8%;
+    top: 10256px;
+    cursor: pointer;
+    left: 8%;
+    z-index: 2;   
+}
+
+
+#friend {
+position: absolute;
+width: 319.75px;
+height: 215px;
+left: 636px;
+top: 10227px;
+    outline: none;
+}
+
+#friend:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+.friend-text {
+    position: absolute;
+    width: 512px;
+    height: 49px;
+   left: 627px;
+top: 10448px;
+}
+
+#dylan {
+   position: absolute;
+width: 319.75px;
+height: 215px;
+left: 229px;
+top: 10443px;
+    outline: none;
+}
+
+#dylan:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+.dylan-text {
+    position: absolute;
+    width: 431px;
+    height: 24px;
+   left: 222px;
+top: 10665px;
+}
+
+
+#aluna-columbine {
+position: absolute;
+width: 319.75px;
+height: 215px;
+left: 883px;
+top: 10147px; 
+}
+
+.aluna-columbine-text {
+position: absolute;
+width: 431px;
+height: 24px;
+left: 875px;
+top: 10368px;
+}
+
+#aluna-columbine:hover {
+     width: 663.01px;
+    height: 420px;
+    left: 50%;
+    z-index: 3;
+}
+
+
+#prom {
+ position: absolute;
+width: 319.75px;
+height: 215px;
+left: 50%;
+top: 10554px;
+    outline: none;
+}
+
+#prom:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 3;
+}
+
+.prom-text {
+    position: absolute;
+    width: 447px;
+    height: 22px;
+    left: 50%;
+    top: 10768px;
+}
+
+.elephant-poem3 {
+    position: absolute;
+    width: 414px;
+    height: 306px;
+    left: 213px;
+    top: 10177px;
+    z-index: 1001;
+}
+
+.spot-poem {
+    position: absolute;
+    width: 179px;
+    height: 253px;
+    left: 30%;
+    top: 10185px;
+    z-index: 1000;
+}
+
+
+
+
+
+
+/*PLANNING*/
+
+#planning-voz {
+    position: absolute;
+width: 588.82px;
+height: 373px;
+top: 11168px;
+     left: calc(50% - 588.82px/2);
+    box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69);
+    z-index: 4;
+    outline: none;
+}
+
+#planning-button {
+         position: absolute;
+    width: 36px;
+    height: 33px;
+    left: 8%;
+    top: 11168px;
+    cursor: pointer;
+    left: 8%;
+    z-index: 2; 
+}
+
+
+.plan1 {
+    background-image: url(img/journey/planning/plan1.svg);
+    position: absolute;
+    width: 192px;
+    height: 237px;
+    left: 288px;
+    top: 11137px;
+    background-size: cover;
+}
+
+.plan1-text {
+
+    position: absolute;
+    width: 221px;
+    height: 93px;
+    left: 288px;
+    top: 11387px;
+}
+
+.plan1:hover {
+    width: 316px;
+    height: 391px;
+    z-index: 3;
+}
+
+.plan2 {
+    background-image: url(img/journey/planning/plan2.svg);
+
+    position: absolute;
+    width: 331px;
+    height: 334px;
+    left: 544px;
+    top: 11089px;
+    background-size: cover;
+}
+
+.plan2-text {
+    position: absolute;
+    width: 340px;
+    height: 49px;
+    left: 544px;
+    top: 11431px;
+}
+
+.plan2:hover {
+    width: 403px;
+    height: 407px;
+    z-index: 3;
+}
+
+.plan3 {
+    background-image: url(img/journey/planning/plan3.svg);
+    position: absolute;
+    width: 270px;
+    height: 196px;
+    left: 901px;
+    top: 11317px;
+    background-size: cover;
+}
+
+.plan3-text {
+
+    position: absolute;
+    width: 309px;
+    height: 186px;
+    left: 901px;
+    top: 11522px;
+}
+
+.plan3:hover {
+    width: 414px;
+    height: 301px;
+    z-index: 3;
+}
+
+.plan4 {
+    background-image: url(img/journey/planning/plan4.svg);
+    position: absolute;
+    width: 280px;
+    height: 187px;
+    left: 440px;
+    top: 11513px;
+    background-size: cover;
+}
+
+.plan4-text {
+
+    position: absolute;
+    width: 298px;
+    height: 67px;
+    left: 440px;
+    top: 11709px;
+}
+
+.plan4:hover {
+    width: 540px;
+    height: 360px;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+/*BACK TO SHOOTING*/
+
+#back-shooting-voz{
+    position: absolute;
+width: 588.82px;
+height: 373px;
+left: calc(50% - 588.82px/2);
+top: 12046px;
+    z-index: 4;
+    box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69);
+    outline: none;
+}
+
+#shooting-button {
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    left: 8%;
+    top: 12046px;
+    cursor: pointer;
+    left: 8%;
+    z-index: 2;   
+}
+
+
+#since-columbine {
+   position: absolute;
+width: 319.75px;
+height: 215px;
+left: 15%;
+top: 12280px;
+    outline: none;
+}
+
+#since-columbine:hover {
+    width: 663.01px;
+    height: 459px;
+    z-index: 3;
+}
+
+.since-columbine-text {
+    position: absolute;
+    width: 523px;
+    height: 55px;
+    left: 15%;
+    top: 12510px;
+}
+
+#reportagem {
+  position: absolute;
+width: 319.75px;
+height: 215px;
+left: 30%;
+top: 11984px;
+outline: none;
+  
+}
+
+
+#reportagem:hover {
+    width: 663.01px;
+    height: 420px;
+    z-index: 2;
+}
+
+.reportagem-text {
+    position: absolute;
+    width: 498px;
+    height: 49px;
+    left: 30%;
+    top: 12210px;
+    z-index: 1;
+}
+
+#call {
+    position: absolute;
+width: 319.75px;
+height: 215px;
+left: 55%;
+top: 12158px;
+    outline: none;
+
+}
+
+#call:hover {
+
+    width: 663.01px;
+    height: 420px;
+    z-index: 2;
+
+}
+
+.call-text {
+    position: absolute;
+    width: 429px;
+    height: 69px;
+    left: 55%;
+    top: 12390px;
+}
+
+.link {
+    position: absolute;
+    width: 1440px;
+    height: 321px;
+    top: 12802px;
+    z-index: 1001;
+    justify-content: center;
+    text-align: center;
+}
+
+.spot-back-shooting {
+    position: absolute;
+    width: 179px;
+    height: 253px;
+    left: calc(50% - 179px/2 - 242.5px);
+    top: calc(50% - 253px/2 + 6100px);
+    z-index: 1000;
+}
+
+.credits {
+    position: absolute;
+    width: 407px;
+    height: 260px;
+    left: calc(50% - 407px/2 - 0.5px);
+    top: 13440px;
+}
+
+.assinatura {
+    position: absolute;
+    width: 548px;
+    height: 56px;
+    left: calc(50% - 548px/2 - 0.5px);
+    top: 13939px;
+    display: flex;
+    justify-content: center;
+}
