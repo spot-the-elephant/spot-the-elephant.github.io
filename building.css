@@ -1,0 +1,238 @@
+@font-face {
+    src: url(fonts/Wremena-Light.otf);
+    font-family: W;
+}
+
+
+body {
+    background-color: #010101;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+height: 1842px;
+    position: relative;
+    cursor: none;
+    overflow-x: hidden;
+}
+
+.cursor {
+    background-image: url(img/cursor.svg);
+    background-size: cover;
+    position: fixed;
+    width: 179px;
+    height: 253px;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 999;
+    transition: transform 0.2s;
+}
+
+.menu {
+    position: absolute;
+    width: 288px;
+    height: 316px;
+    left: 0.5%;
+    top: 0.10%;
+    /* background-color: aqua;*/
+    display: block;
+    font-size: 16px;
+    z-index: 1001;
+    position: fixed;
+}
+
+
+.dropdown-button {
+    /*  background-color: pink;*/
+    width: 260px;
+    height: 47px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    text-align: left;
+}
+
+
+.dropdown-menu {
+
+    position: relative;
+    z-index: 1;
+    display: none;
+    width: 260px;
+    height: 236px;
+    font-family: W;
+    font-size: 20px;
+}
+
+.subtitle {
+    width: 260px;
+    height: 56px;
+    display: block;
+    /* background-color: blue;*/
+}
+
+
+.nav {
+    width: 260px;
+    height: 128px;
+    color: white;
+    /*  background-color: bisque;*/
+    display: block;
+    padding-top: 20px;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.menu:hover .dropdown-menu {
+    display: block;
+
+}
+
+.background-azul {
+    position: absolute;
+    width: 1440px;
+    height: 1050px;
+    top: 0%;
+}
+
+
+.insta {
+    background-image: url(img/insta-branco.svg);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: calc(50% - 25px/2 - 0.5px);
+    position: absolute;
+   top: 1720px;
+}
+
+.assinatura {
+    position: absolute;
+    width: 548px;
+    height: 56px;
+   left: calc(50% - 548px/2 - 0.5px);
+   top: 1786px;
+    text-align: center;
+}
+
+.insta:hover {
+    background-image: url(img/insta-azul.svg);
+}
+
+#back {
+    background-image: url(img/back.svg);
+    position: fixed;
+    width: 301px;
+height: 20px;
+    top: 90%;
+    left: 4%;
+    display: none;
+    z-index: 99;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+#back:hover {
+    background-image: url(img/back2.svg);
+}
+
+
+
+
+
+.intro {
+position: absolute;
+width: 651px;
+height: 339px;
+left: 395px;
+top: 340px;
+    text-align: center;
+}
+
+.one {
+position: absolute;
+width: 249px;
+height: 280px;
+left: 395px;
+top: 757px;
+    background-image: url(img/building/1.svg);
+}
+
+.one:hover {
+    background-image: url(img/building/1hover.svg);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.two {
+position: absolute;
+width: 249px;
+height: 280px;
+left: 759px;
+top: 822px;
+    background-image: url(img/building/2.svg);
+}
+
+.two:hover {
+    background-image: url(img/building/2hover.svg);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.three {
+position: absolute;
+width: 251px;
+height: 282px;
+left: 437px;
+top: 1107px;
+}
+
+.four {
+position: absolute;
+width: 251px;
+height: 282px;
+left: 671px;
+top: 1265px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

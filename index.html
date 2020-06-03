@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+  
+
+<head>
+    <title>Spot the Elephant</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+      <script type="text/javascript" src="js/scroll.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="journey.css">
+
+</head>
+
+
+<body>
+    
+
+    <menu class="menu">
+
+        <a class="dropdown-button" href="index.html"><img src="img/menu/title.svg"></a>
+
+        <div class="dropdown-menu">
+
+            <div class="subtitle"><img src="img/menu/subtitle.svg">
+            </div>
+
+            <div class="nav">
+                <a href="about.html">About</a>
+                
+                <a href="approaches.html">Approaches</a>
+            
+                <a href="building.html">Building Spot the Elephant</a>
+            </div>
+        </div>
+
+    </menu>
+
+    <div class="background-azul"><img src="img/journey/background-azul.svg"></div>
+
+    <div class="BKG"><img src="img/BKG.svg"></div>
+
+
+    <div id="enter"><img src="img/enter.svg"></div>
+
+    
+    <a class="insta" href="https://www.instagram.com/spothelephant/" target="_blank"></a>
+    
+    <div class="cursor"></div>
+ 
+   <div id="top" onclick="topFunction()"></div>
+
+    
+    <!--TOP-->
+
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+
+            mybutton = document.getElementById("top");
+
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+    
+    
+
+
+ <div class="line"><img src="img/journey/line.svg"></div>
+
+
+    
+    <!--12-SHOOTING-->
+    
+
+    <div class="shooting-title"> <img src="img/journey/12-shooting/title.svg"></div>
+        
+        
+
+    <video id="1vid" width="1076" height="615" poster="img/journey/12-shooting/thumb.png" controls="controls" style="position: absolute;
+width: 588.82px;
+box-shadow: 10px 20px 20px rgba(0, 37, 220, 0.69); height: 373px;
+  left: calc(50% - 588.82px/2);;
+top: 1134px; outline:none;"><source src="img/journey/12-shooting/shooting-voice.mp4"></video>
+
+    <div id="coluna-shooting"><img src="img/journey/volume.svg"></div>
+
+    <div id="coluna-off"><img src="img/journey/volume-off.svg"></div>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#coluna-shooting").click(function() {
+                $("#1vid").toggle(1000);
+
+
+                /*$("#coluna-off").style.display = "block";
+                
+                $("#coluna-shooting").style.display = "none";*/
+
+
+            });
+
+
+
+        })
+
+    </script>
+            
+     
+             
+             
+
+    <!--1-WAR-->
+
+    <!-- <div class="war-voice"><img src="img/journey/1-war/voz-off.svg"></div>-->
+
+    <video id="war-voice" controls="controls" poster="img/journey/1-war/thumb.png">
+        <source src="img/journey/1-war/america-war-voice.mp4"></video>
+
+    <button id="close">Close</button>
+       <button id="open">Open</button>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#close").click(function() {
+                $("#war-voice").toggle(1000);
+               
+                
+         if($("#close").text()=="Close")  {
+                      $("#close").text("Open");
+                } 
+                else {
+                   $("#close").text("Close"); 
+                }
+            
+            })
+        })
+
+    </script>
+    
+
+    <div class="vietnam"></div>
+
+    <div class="vietnam-text"></div>
+
+    <div class="uncle-sam"></div>
+
+    <div class="uncle-sam-text"><img src="img/journey/1-war/uncle-sam-text.svg"></div>
+
+    <video class="soldiers-video" controls="controls" poster="img/journey/1-war/thumb2.png" width: 435px height=264px>
+        <source src="img/journey/1-war/soldiers.mp4" video="web/mp4"></video>
+
+    <div class="soldiers-text"><img src="img/journey/1-war/soldiers-text.svg"></div>
+
+
+    <video class="vietnam-video" controls="controls" width: 435px height=264px>
+        <source src="img/journey/1-war/vietnam.mp4" video="web/mp4"></video>
+
+    <div class="vietnam-vid-text"><img src="img/journey/1-war/vietnam-text.svg"></div>
+
+    
+<div id="recordings">
+            
+                <div id="buttons">
+           
+                    <button id="play" onclick="playOrPauseSongbutton1()"><img src="img/journey/play.svg"/></button>
+                </div>
+                
+                <div id="seek-bar">
+                    <div id="fill"></div>
+                    <div id="handle"></div>
+                </div>
+            </div>
+    
+    
+    
+    <script type="text/javascript">
+        
+        var songs =  ["vietnam-recordings.mp3"];
+        
+        var fillBar = document.getElementById("fill");
+        
+        var song = new Audio();
+        var currentSong = 0;    // it point to the current song
+        
+        //window.onload = playSongbutton1;   // it will call the function playSong when window is load
+        
+        function playSongbutton1(){
+            
+            song.src = songs[currentSong];  //set the source of 0th song 
+            
+           // song.Title.textContent = songs[currentSong]; // set the title of song
+            
+            song.play();    // play the song
+        }
+        
+        function playOrPauseSongbutton1(){
+            
+            if(song.paused){
+                song.play();
+                $("#play img").attr("src","img/journey/pause.svg");
+            }
+            else{
+                song.pause();
+                $("#play img").attr("src","img/journey/play.svg");
+            }
+        }
+        
+        song.addEventListener('timeupdate',function(){ 
+            
+            var position = song.currentTime / song.duration;
+            
+            fillBar.style.width = position * 100 +'%';
+        });
+    
+   
+        
+        
+    </script>
+    
+
+    <div class="vietnam-recordings-text"><img src="img/journey/1-war/vietnam-recording-text.svg"></div>
+            
+        
+
+    
+    
+
+    <!--1-ALEX-BIRTH-->
+
+    
+    <video id="birth-voice" src="img/journey/2-alex-birth/alex-birth-voice.mp4" controls poster="img/journey/2-alex-birth/thumb.png"></video>
+
+    <div id="birth-button"><img src="img/journey/volume.svg"></div>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#birth-button").click(function() {
+                $("#birth-voice").toggle(1000);
+            })
+        })
+
+    </script>
+
+    <!--CHANGE-IMG-->
+    <script>
+        function changeImage() {
+
+            if (document.getElementById("coluna").src == "img/journey/volume-off.svg") {
+
+                document.getElementById("coluna").src = "img/journey/volume-off.svg";
+            } else {
+                document.getElementById("coluna").src = "img/journey/volume.svg"
+            }
+
+        }
+
+    </script>
+
+
+    <a class="colorado-nyt" href="https://www.nytimes.com/1988/05/01/magazine/colorado-s-thriving-cults.html" target="_blank"></a>
+
+    <div class="colorado-text"><img src="img/journey/2-alex-birth/colorado-nyt-text.svg"></div>
+
+    <video class="promo-vid" controls width: 435px height=264px poster="img/journey/2-alex-birth/thumb2.png">
+        <source src="img/journey/2-alex-birth/promo-vid.mp4"> video="web/mp4"
+    </video>
+
+    <div class="promo-vid-text"><img src="img/journey/2-alex-birth/promo-text.svg"></div>
+
+    <video class="armed-man-vid" controls="controls" width: 435px height=264px>
+        <source src="img/journey/2-alex-birth/armed-man.mp4"> video="web/mp4">
+    </video>
+
+    <div class="armed-man-text"><img src="img/journey/2-alex-birth/armed-man-text.svg"></div>
+
+    <div class="rocky-mountain"></div>
+
+    <div class="rocky-mountains-text"><img src="img/journey/2-alex-birth/rocky-mountains-text.svg"></div>
+
+
+
+
+
+    <!--FIRST-PIANO-LESSON-->
+
+    <video id="piano-voz-off" src="img/journey/3-first-piano-lesson/first-piano-lesson-voz.mp4" controls poster="img/journey/3-first-piano-lesson/thumb.png"></video>
+
+
+    <button id="piano-button"><img src="img/journey/volume.svg"></button>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#piano-button").click(function() {
+                $("#piano-voz-off").toggle(1000);
+            })
+        })
+
+    </script>
+    
+    
+    
+    <div id="ted">
+            
+                <div id="buttons">
+           
+                    <button id="playbutton2" onclick="playOrPauseSongbutton2()"><img src="img/journey/play.svg"/></button>
+                </div>
+                
+                <div id="seek-barbutton2">
+                    <div id="fillbutton2"></div>
+                    <div id="handlebutton2"></div>
+                </div>
+            </div>
+    
+    
+    
+    <script type="text/javascript">
+        
+        var songsbutton2 = ["ted.mp3"];
+        
+        var fillBarbutton2 = document.getElementById("fillbutton2");
+        
+        var songbutton2 = new Audio();
+        var currentSongbutton2 = 0;    // it point to the current song
+        
+        //window.onload = playSongbutton2;   // it will call the function playSong when window is load
+        
+        function playSongbutton2(){
+            
+            songbutton2.src = songs[currentSong];  //set the source of 0th song 
+            
+            songTitle.textContent = songsbutton2[currentSong]; // set the title of song
+            
+            songbutton2.play();    // play the song
+        }
+        
+        function playOrPauseSongbutton2(){
+            
+            if(songbutton2.paused){
+                songbutton2.play();
+                $("#play img").attr("src","img/journey/pause.svg");
+            }
+            else{
+                songbutton2.pause();
+                $("#play img").attr("src","img/journey/play.svg");
+            }
+        }
+        
+        songbutton2.addEventListener('timeupdate',function(){ 
+            
+            var position = songbutton2.currentTime / songbutton2.duration;
+            
+            fillBarbutton2.style.width = position * 100 +'%';
+        });
+    
+    
+    </script>
+    
+    
+    
+
+    <div class="ted-texto"><img src="img/journey/3-first-piano-lesson/ted-texto.svg"></div>
+
+
+    <video class="fur-elise" controls="controls" width: 435px height=264px>
+        <source src="img/journey/3-first-piano-lesson/fur-elise.mp4"> video="web/mp4">
+    </video>
+
+    <div class="fur-elise-texto"><img src="img/journey/3-first-piano-lesson/fur-elise-texto.svg"></div>
+
+    <div class="elephant-poem1"><img src="img/journey/3-first-piano-lesson/elephant-poem1.svg"></div>
+
+    <div class="piano-lesson-spot"><img src="img/journey/spot.svg"></div>
+
+
+    
+    
+    
+    
+    
+    <!--MEDIA-->
+
+    <video id="media-voice" src="img/journey/4-media/media.mp4" controls poster="img/journey/4-media/thumbnail.png"></video>
+
+
+    <div id="media-button"><img src="img/journey/volume.svg"></div>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#media-button").click(function() {
+                $("#media-voice").toggle(1000);
+            })
+        })
+
+    </script>
+
+    <video id="propaganda" src="img/journey/4-media/propaganda1.mp4" controls poster="img/journey/4-media/thumb2.png"></video>
+
+    <div class="propa-text"><img src="img/journey/4-media/propa-text1.svg"></div>
+
+    <video id="propaganda2" src="img/journey/4-media/propaganda2.mp4" controls></video>
+
+    <div class="propa-text2"><img src="img/journey/4-media/propa-text2.svg"></div>
+
+    <video id="rambo" src="img/journey/4-media/rambo.mp4" controls></video>
+
+    <div class="rambo-text"><img src="img/journey/4-media/rambo-text.svg"></div>
+
+    <video id="manson" src="img/journey/4-media/manson.mp4" controls></video>
+
+    <div class="manson-text"><img src="img/journey/4-media/manson-text.svg"></div>
+
+    <video id="western" src="img/journey/4-media/western.mp4" controls></video>
+
+    <div class="western-text"><img src="img/journey/4-media/western-text.svg"></div>
+    
+
+
+
+
+    <!--CONTACT GUNS-->
+
+      <video id="guns-voz" src="img/journey/5-first-contact-guns/first-contact-guns-voz.mp4" controls poster="img/journey/5-first-contact-guns/thumb.png"></video>
+    
+    
+     <div id="guns-button"><img src="img/journey/volume.svg"></div>
+
+    <script>
+        $(document).ready(function() {
+            $("#guns-button").click(function() {
+                $("#guns-voz").toggle(1000);
+            })
+        })
+
+    </script>
+    
+
+    <video id="add" src="img/journey/5-first-contact-guns/add.mp4" controls poster="img/journey/5-first-contact-guns/thumb2.png"></video>
+
+    <div class="add-text"><img src="img/journey/5-first-contact-guns/add-text.svg"></div>
+
+    <div class="kid1"></div>
+
+    <div class="kid2"></div>
+
+    <div class="kid3"></div>
+
+    <div class="kid-text"><img src="img/journey/5-first-contact-guns/kids-text.svg"></div>
+
+    <a class="gun-nation" href="https://www.zednelson.com/tearsheets/GNTR.php" target="_blank"></a>
+    
+    <a class="gun-nation2" href="https://www.zednelson.com/tearsheets/GNTR.php" target="_blank"></a>
+
+    <div class="gun-nation-text"><img src="img/journey/5-first-contact-guns/gun-nation-text.svg"></div>
+    
+    <div class="quote-guns"></div>
+    
+    
+    
+    
+    
+    
+    
+      <!--1-DAY-SCHOOL-->
+    
+     <video id="school-voz" src="img/journey/6-first-day-school/first-day-highschool-voz.mp4" controls poster="img/journey/6-first-day-school/thumb.png"></video>
+    
+     <div id="school-button"></div>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#school-button").click(function() {
+                $("#school-voz").toggle(1000);
+            })
+        })
+
+    </script>
+    
+    
+    <div class="frame1"></div>
+    
+    <div class="frame2"></div>
+    
+     <div class="frame3"></div>
+    
+     <div class="frame4"></div>
+    
+     <div class="frame5"></div>
+    
+    <div class="frames-text"><img src="img/journey/6-first-day-school/frames-text.svg"></div>
+    
+    <div class="quote"><img src="img/journey/6-first-day-school/quote.svg"></div>
+    
+    <div class="cartoon"></div>
+    
+    <div class="cartoon-text"></div>
+    
+     <video id="trailer" src="img/journey/6-first-day-school/trailer.mp4" controls></video>
+    
+    <div class="trailer-text"></div>
+    
+      <video id="american-high" src="img/journey/6-first-day-school/all-american-high.mp4" controls></video>
+    
+    <div class="american-high-text"></div>
+    
+    
+    
+    
+    
+    
+    
+     <!--4 JULHO-->
+    
+     <video id="four-julho-voz" src="img/journey/7-4-julho/4july-voz.mp4"controls poster="img/journey/7-4-julho/thumb.png"></video>
+    
+        <div id="four-july-button"><img src="img/journey/volume.svg"></div>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#four-july-button").click(function() {
+                $("#four-julho-voz").toggle(1000);
+            })
+        })
+
+    </script>
+      
+    
+    <div class="four-july-poem"></div>
+    
+    <div class="poem-text"><img src="img/journey/7-4-julho/poem-text.svg"></div>
+    
+      <video id="fur-elise-four-julho" src="img/journey/3-first-piano-lesson/fur-elise.mp4" controls></video>
+    
+    <div class="fur-elise-four-julho-text"></div>
+    
+    <div class="elephant-poem2"><img src="img/journey/7-4-julho/elephant-poem2.svg"></div>
+    
+    <div class="spot-four-july"><img src="img/journey/spot.svg"></div>
+    
+    
+   <!--    <audio class="american-dream" controls>
+        <source src="img/journey/7-4-julho/the-american-dream-is-dead.m4a" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+    </audio>-->
+    
+      
+    <div id="american-dream">
+            
+                <div id="buttons">
+           
+                    <button id="play" onclick="playOrPauseSongbutton3()"><img src="img/journey/play.svg"/></button>
+                </div>
+                
+                <div id="seek-barbutton3">
+                    <div id="fillbutton3"></div>
+                    <div id="handlebutton3"></div>
+                </div>
+            </div>
+    
+    
+    
+    <script type="text/javascript">
+        
+        var songsbutton3 = ["the-american-dream-is-dead.m4a"];
+        
+        var fillBarbutton3 = document.getElementById("fillbutton3");
+        
+        var songbutton3 = new Audio();
+        var currentSongbutton3 = 0;    // it point to the current song
+        
+        //window.onload = playSongbutton3;   // it will call the function playSong when window is load
+        
+        function playSongbutton3(){
+            
+            songbutton3.src = songsbutton3[currentSong];  //set the source of 0th song 
+            
+            //songTitle.textContent = songs[currentSong]; // set the title of song
+            
+            songbutton3.play();    // play the song
+        }
+        
+        function playOrPauseSongbutton3(){
+            
+            if(songbutton3.paused){
+                songbutton3.play();
+                $("#play img").attr("src","img/journey/pause.svg");
+            }
+            else{
+                songbutton3.pause();
+                $("#play img").attr("src","img/journey/play.svg");
+            }
+        }
+        
+        songbutton3.addEventListener('timeupdate',function(){ 
+            
+            var position = songbutton3.currentTime / songbutton3.duration;
+            
+            fillBarbutton3.style.width = position * 100 +'%';
+        });
+    
+    
+    </script>
+    
+    
+    <div class="american-dream-text"><img src="img/journey/7-4-julho/american-dream-text.svg"></div>
+    
+    
+    
+    
+    
+       <!--FRIENDSHIP-->
+    
+      <video id="friendship-voz" src="img/journey/8-friendship/friendship-voz.mp4"controls poster="img/journey/8-friendship/thumb.png" ></video>
+    
+     <div id="friendship-button"><img src="img/journey/volume.svg"></div>
+    
+        <script>
+        $(document).ready(function() {
+            $("#friendship-button").click(function() {
+                $("#four-julho-voz").toggle(1000);
+            })
+        })
+
+    </script>
+    
+    
+       <video id="doom" src="img/journey/8-friendship/doom.mp4" controls></video>
+    
+    <div class="doom-text"><img src="img/journey/8-friendship/doom-text.svg"></div>
+    
+       <video id="columbine-tapes" src="img/journey/8-friendship/columbine-tapes.mp4" controls></video>
+    
+    
+       <video id="columbine-tapes2" src="img/journey/8-friendship/columbine-tapes2.mp4" controls></video>
+    
+       <div class="columbine-tapes-text"><img src="img/journey/8-friendship/columbine-tapes-text.svg"></div>
+    
+       <video id="doom-levels" src="img/journey/8-friendship/doom-levels.mp4" controls></video>
+    
+       <div class="doom-levels-text"><img src="img/journey/8-friendship/doom-levels-text.svg"></div>
+    
+    <div class="gun-kid1"></div>
+    
+       <div class="gun-kid2"></div>
+    
+       <div class="gun-kid3"></div>
+    
+       <div class="gun-kid-text"><img src="img/journey/8-friendship/gun-kids-text.svg"></div>
+    
+    
+    
+    
+    
+       <!--PLANNING-->
+    
+      <video id="planning-voz" src="img/journey/planning/planning-voice.mp4"controls poster="img/journey/planning/thumb.png" ></video>
+    
+             <div id="planning-button"><img src="img/journey/volume.svg"></div>
+    
+        <script>
+        $(document).ready(function() {
+            $("#planning-button").click(function() {
+                $("#planning-voz").toggle(1000);
+            })
+        })
+
+    </script>
+    
+    
+    <div class="plan1"></div>
+    
+    <div class="plan1-text"><img src="img/journey/planning/plan1-text.svg"></div>
+    
+     <div class="plan2"></div>
+    
+      <div class="plan2-text"><img src="img/journey/planning/plan2-text.svg"></div>
+    
+     <div class="plan3"></div>
+    
+      <div class="plan3-text"><img src="img/journey/planning/plan3-text.svg"></div>
+    
+     <div class="plan4"></div>
+    
+      <div class="plan4-text"><img src="img/journey/planning/plan4-text.svg"></div>
+    
+    
+    
+    
+                               
+        <!--BULLYING-->
+    
+      <video id="bullying-voz" src="img/journey/9-bullying/bullying-voz.mp4"controls poster="img/journey/9-bullying/thumb.png"></video>
+    
+                <div id="bullying-button"><img src="img/journey/volume.svg"></div>
+    
+        <script>
+        $(document).ready(function() {
+            $("#bullying-button").click(function() {
+                $("#bullying-voz").toggle(1000);
+            })
+        })
+
+    </script>
+
+    
+       <video id="columbine" src="img/journey/9-bullying/columbine.mp4" controls></video>
+    
+    <div class="columbine-text"><img src="img/journey/9-bullying/columbine-text.svg">
+        </div>
+    
+    <div class="eric-profile"></div>
+    
+    <div class="eric-profile-text"><img src="img/journey/9-bullying/eric-profile-text.svg"></div>
+    
+      <video id="clueless" src="img/journey/9-bullying/clueless.mp4" controls></video>
+    
+    <div class="clueless-text"><img src="img/journey/9-bullying/clueless-text.svg"></div>
+    
+    <video id="bullying" src="img/journey/9-bullying/BullyingDepression.mp4" controls></video>
+    
+    <div class="bullying-text"><img src="img/journey/9-bullying/bullies-text.svg"></div>
+    
+    <div class="internet"></div>
+    
+    <div class="internet-text"><img src="img/journey/9-bullying/internet-text.svg"></div>
+    
+    
+    <div class="quote-bully2"><img src="img/journey/9-bullying/bullying-quote2.svg"></div>
+    
+    
+    
+    
+    
+    
+      <!--PROM-->
+    
+      <video id="prom-voz" src="img/journey/prom/Prom-voz.mp4"controls poster="img/journey/prom/thumb.png" ></video>
+    
+    
+                <div id="prom-button"><img src="img/journey/volume.svg"></div>
+    
+        <script>
+        $(document).ready(function() {
+            $("#prom-button").click(function() {
+                $("#prom-voz").toggle(1000);
+            })
+        })
+
+    </script>
+    
+     <video id="friend" src="img/journey/prom/friend.mp4" controls></video>
+    
+    <div class="friend-text"><img src="img/journey/prom/dylan-friend-text.svg"></div>
+    
+     <video id="dylan" src="img/journey/prom/dylan.mp4" controls></video>
+    
+   <div class="dylan-text"><img src="img/journey/prom/dylan-talks-text.svg"></div> 
+    
+     <video id="aluna-columbine" src="img/journey/prom/aluna-columbine.mp4" controls></video>
+    
+     <div class="aluna-columbine-text"><img src="img/journey/prom/aluna-columbine-text.svg"></div> 
+    
+     <video id="prom" src="img/journey/prom/prom.mp4" controls poster="img/journey/prom/thumb2.png"></video>
+    
+      <div class="prom-text"><img src="img/journey/prom/prom-text.svg"></div> 
+    
+    <div class="elephant-poem3"><img src="img/journey/prom/elephant-poem3.svg"></div>
+    
+    <div class="spot-poem"><img src="img/journey/spot.svg"></div>
+    
+    
+    
+
+
+
+    <!--BACK-TO-SHOOTING-->
+    
+      <video id="back-shooting-voz" src="img/journey/back-to-shooting/Gunshooting-voz.mp4"controls poster="img/journey/back-to-shooting/thumb.png" ></video>
+    
+     <div id="shooting-button"><img src="img/journey/volume.svg"></div>
+    
+        <script>
+        $(document).ready(function() {
+            $("#shooting-button").click(function() {
+                $("#back-shooting-voz").toggle(1000);
+            })
+        })
+
+    </script>
+    
+       <video id="since-columbine" src="img/journey/back-to-shooting/since-columbine.mp4" controls poster="img/journey/back-to-shooting/thumb2.png"></video>
+
+    <div class="since-columbine-text"><img src="img/journey/back-to-shooting/since-columbine-text.svg"></div>
+    
+     <video id="reportagem" src="img/journey/back-to-shooting/reportagem.mp4" controls></video>
+    
+    <div class="reportagem-text"><img src="img/journey/back-to-shooting/reportagem-text.svg"></div>
+    
+     <video id="call" src="img/journey/back-to-shooting/911-call.mp4" controls></video>
+    
+    <div class="call-text"><img src="img/journey/back-to-shooting/911-call-text.svg"></div>
+
+    
+    <div class="link"><img src="img/journey/back-to-shooting/citacao-final.svg"></div>
+
+  <!--<div class="spot-back-shooting"><img src="img/journey/spot.svg"></div>-->
+    
+    <div class="credits"><img src="img/journey/creditos.svg"></div>
+
+    <div class="assinatura"><img src="img/journey/assinatura.svg"></div>
+        
+        
+      
+
+
+
+
+
+
+
+    <!--ENTER
+
+    <script>
+        window.addEventListener('scroll', function(e) {
+
+            //alert();
+            last_known_scroll_position = window.scrollY;
+
+            //console.log("posY"+last_known_scroll_position);
+            //scrollFunction();
+
+            var testDiv = document.getElementById("enter");
+
+            var offset = testDiv.offsetTop;
+
+            //console.log('offset'+offset);
+
+            if (
+                (last_known_scroll_position > 350) && (last_known_scroll_position < 950)) {
+
+
+
+                var opacity_current = mybutton.style.opacity;
+
+                var em = document.getElementById("enter");
+                var temp = window.getComputedStyle(em).getPropertyValue("opacity");
+
+
+                em.style.opacity = temp - 0.3;
+
+                //console.log('temp'+ temp);
+
+
+            } else {
+
+
+
+                var em = document.getElementById("enter");
+                var temp = window.getComputedStyle(em).getPropertyValue("opacity");
+
+
+                em.style.opacity = temp + 0.5;
+
+                console.log("aumentou" + temp);
+
+            }
+
+        });
+
+    </script>-->
+
+
+
+    <!--CURSOR-->
+
+    <script>
+        $(document).ready(function() {
+            var cursor = $(".cursor");
+
+            $(window).mousemove(function(e) {
+                cursor.css({
+                    top: e.clientY - cursor.height() / 2,
+                    left: e.clientX - cursor.width() / 2
+                });
+            });
+
+            $(window)
+                .mouseleave(function() {
+                    cursor.css({
+                        opacity: "0"
+                    });
+                })
+                .mouseenter(function() {
+                    cursor.css({
+                        opacity: "1"
+                    });
+                });
+
+            
+            $(".link")
+                .mouseenter(function() {
+                    cursor.css({
+                        transform: "scale(3.2)"
+                    });
+                })
+                .mouseleave(function() {
+                    cursor.css({
+                        transform: "scale(1)"
+                    });
+                });
+
+            $(window)
+                .mousedown(function() {
+                    cursor.css({
+                        transform: "scale(.2)"
+                    });
+                })
+                .mouseup(function() {
+                    cursor.css({
+                        transform: "scale(1)"
+                    });
+                });
+        });
+
+    </script>
+
+
+
+
+
+    
+
+
+
+</body>
+
+</html>
