@@ -113,10 +113,13 @@ width: 100px;
 }
 
 .background-azul {
+   background-image: url(img/journey/background-azul.svg);
     position: absolute;
     width: 1440px;
     height: 1050px;
     top: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
