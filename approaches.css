@@ -108,10 +108,13 @@ width: 100px;
 }
 
 .background-azul {
+     background-image: url(img/journey/background-azul.svg);
     position: absolute;
     width: 1440px;
     height: 1050px;
     top: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 1;
 }
 
@@ -307,6 +310,19 @@ top: 4746px;
 }
 
 
+
+@media only screen and (min-width: 1441px) {
+
+   .background-azul {
+    background-image: url(img/journey/bkg-azul2.svg);
+    width: 3000px;
+    height: 1380px;
+    top: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+
+}
 
 
 
