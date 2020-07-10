@@ -14,6 +14,7 @@ body {
     height: 13995px;
     position: relative;
     cursor: none;
+        overflow-x: hidden;
 
 }
 
@@ -125,13 +126,11 @@ width: 100px;
 
 
 .background-azul {
-    background-image: url(img/journey/background-azul.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    width: 1440px;
-    height: 1050px;
-    top: 0%;
+  background: linear-gradient(180deg, #0025DC 0%, rgba(0, 37, 220, 0) 79.06%);
+width: 100%;
+height: 1072px;
+left: -1px;
+top: 0px;
 
 }
 
@@ -140,11 +139,10 @@ width: 100px;
     background-repeat: no-repeat;
     background-image: url(img/BKG.svg);
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 11514px;
     left: 0px;
     top: 1072px;
-    background-size: cover;
 }
 
 
