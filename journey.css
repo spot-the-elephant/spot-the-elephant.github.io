@@ -2444,37 +2444,6 @@ height: 25px;
 
 
 
-@media only screen and (min-width: 1441px) {
-
-   .background-azul {
-    background-image: url(img/journey/bkg-azul2.svg);
-    width: 3000px;
-    height: 1380px;
-        top: 0%;
-        background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-
-}
-
-.BKG {
-    background-image: url(img/journey/BKG2.png);
-    width: 3053px;
- height: 11805px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-     left: 0px;
-top: 1230px;
-}
-
-
-
-
-
-
-
-
 
 
 
